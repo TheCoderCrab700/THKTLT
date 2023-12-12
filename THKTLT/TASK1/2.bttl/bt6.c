@@ -3,7 +3,7 @@
 double tinh(double x, double y) {
     double tu_so = exp(x + y) - log(pow(x, 2) - y);
     double mau_so = cos(x + y) - sin(x);
-     if (mau_so == 0) {
+    if (mau_so == 0) {
         printf("Loi: Ham khong xac dinh.\n");
         return 0;
     }
@@ -17,6 +17,6 @@ int main() {
     printf("Nhap gia tri cua y: ");
     scanf("%lf", &y);
     double ketqua = tinh(x, y);
-    printf("Gia tri cua hàm g là: %lf\n", ketqua);
+    printf("Gia tri cua ham g(x,y) la: %lf\n", ketqua);
     return 0;
 }

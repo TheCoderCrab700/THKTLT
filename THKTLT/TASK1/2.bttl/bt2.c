@@ -6,8 +6,8 @@ int main ()
 	scanf("%f",&L);
 	printf("Nhap vao chieu rong W: ");
 	scanf("%f",&W);
-D=L*W;
-C=(L+W)*2;
+	D=L*W;
+	C=(L+W)*2;
 	printf("Dien tich HCN la: %f\n", D);
 	printf("Chu vi HCN la: %f\n",C);
 }    

@@ -8,7 +8,7 @@ int main ()
 	scanf("%f",&b);
 	printf("Nhap vao chieu cao h: ");
 	scanf("%f",&h);
-S=(a+b)*h/2;
+	S=(a+b)*h/2;
 	printf("Dien tich hinh thang la: %f\n", S);
 	getch();
 }
