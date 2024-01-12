@@ -1,18 +1,31 @@
 #include<stdio.h>
-
-int main() {
-	int i,j,k;
-	for(i=0;i<=10;i++){
-		for(j=0;j<15-i;j++){
-			printf("  ");
-		}
-		for(k=i+1;k<=2*i+1;k++){
-			printf("%2d",k%10);
-		}
-		for(k=2*i;k>=i+1;k--){
-			printf("%2d",k%10);
-		}
+#include<conio.h>
+#include<math.h>
+#define ll long long 
+int main()
+{
+	ll a,b,c=0; int cs[50];
+	printf("Nhap a="); scanf("%lld",&a);
+	printf("Nhap b="); scanf("%lld",&b);
+	int i=1;
+	ll tmp=b;
+	c=a*b;
+	while (tmp>0)
+	{	
+		cs[i]=(tmp)%10;
+		tmp/=pow(10,i);
+		i++;
+	}
+	printf("%30lld\n",a);
+	printf("          x\n");
+	printf("%30lld\n",b);
+	printf("          --------------------\n");
+	for(int j=1;j<i;j++){
+		for (int k = 0; k <= 10-j; k++) printf(" ");	
+		printf("%20lld",a*cs[j]);
 		printf("\n");
 	}
+	printf("          --------------------\n");
+	printf("%30lld",c);
+	getch();
 }
-
